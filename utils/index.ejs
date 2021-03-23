@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset=="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img src="file:///<%= caminho %>/santander-logo.png" width="25%" height="25%">
+    <hr size=2>
+    <div id="base" style="margin-left: 85px;">
+        <h2 style="font-family:verdana;" aling="center"> IBPJ Obsolescência - Documento de evidências </h2>
+        <hr size=2 style="margin-right:85px">
+        <h3 style="font-family:verdana;"> Funcionalidade:  <%= funcionalidade %></h3>
+        <h4 style="font-family:verdana;"> Caso de teste:  <%= scenario %></h4>
+        <h4 style="font-family:verdana;"> Tempo de execucao:  <%= segundos %> segundos</h4>
+        <hr size=2 style="margin-right:85px">
+        <% for (let index = 0; index < listaImagens.length; index++) { %>
+        <p>
+        <h4 style="font-family:verdana;">Nome da imagem: <%= listaNomeImagens[index] %></h4>
+        </p>
+        <img src=<%= listaImagens[index] %> width="88%" height="88%" align="center" style="margin-bottom:40px">
+        <hr size=2 style="margin-right:85px">
+        <%  } %>
+    </div>
+</body>
+
+</html>

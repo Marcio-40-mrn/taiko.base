@@ -1,0 +1,16 @@
+{
+  "name": "gauge-taiko-template",
+  "description": "Starter template for writing JavaScript tests for Gauge",
+  "scripts": {
+    "test": "gauge run specs/"
+  },
+  "dependencies": {
+    "deasync": "0.1.20",
+    "ejs": "3.1.5",
+    "html-pdf": "2.2.0",
+    "phantomjs-prebuilt": "2.1.16",
+    "rsvp": "4.8.5",
+    "spectacle": "^7.1.1",
+    "taiko": "latest"
+  }
+}
